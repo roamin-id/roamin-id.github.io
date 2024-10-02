@@ -118,7 +118,7 @@ SUCCESS RESPONSE:
 
 #### Websocket untuk komunikasi real-time
 
-1. Gunakan socket `websocket`
+1. Gunakan transport `websocket`
 2. Setelah tersambung, emit `subscribe-to-channel` dengan data `['NewRequest', 'UpdateRequest']`
 3. Listen event `message` untuk mendapatkan update
 ```

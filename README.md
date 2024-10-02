@@ -37,6 +37,19 @@ PARAMS:
 |`akta`|`akta-pembatalan`|Pembatalan Akta|
 |`akta`|`akta-peristiwa-penting`|Peristiwa Penting Lainnya|
 |`akta`|`akta-hilang`|Akta Hilang|
+|`kia`|`kia-baru`|Kartu Identitas Anak (KIA) Baru|
+|`kia`|`kia-perubahan`|Kartu Identitas Anak (KIA) Karena Perubahan Data|
+|`kia`|`kia-hilang`|Kartu Identitas Anak (KIA) Karena Hilang|
+|`kia`|`kia-rusak`|Kartu Identitas Anak (KIA) Karena Rusak|
+|`ktp`|`ktp-baru`|Kartu Tanda Penduduk (KTP) Baru|
+|`ktp`|`ktp-perubahan`|Kartu Tanda Penduduk (KTP) Karena Perubahan Data|
+|`ktp`|`ktp-hilang`|Kartu Tanda Penduduk (KTP) Karena Hilang|
+|`ktp`|`ktp-rusak`|Kartu Tanda Penduduk (KTP) Karena Rusak|
+|`inovasi`|`aksama`|AKSAMA (Menyerahkan Akta Kematian Pada Saat Berduka)|
+|`inovasi`|`aksara`|AKSARA (Administrasi Kependudukan Secara Daring bagi Orang Asing)|
+|`inovasi`|`balita`|BALITA (Bayi Lahir Berakta)|
+|`inovasi`|`nyaksi`|NYAKSI (Menyerahkan Akta Perkawinan Pada Saat Upacara Perkawinan)|
+|`inovasi`|`sakinah`|SAKKINAH (Serahkan Kartu Keluargaa Saat Pernikahan)|
 
 RESPONSE:
 ```

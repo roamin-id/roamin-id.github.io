@@ -16,7 +16,7 @@
 
 > | name         |  type     | data type               | description                                                           |
 > |--------------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | date         |  optional | string                  | default adalah tanggal hari ini, contoh: 2024-09-10                   |
+> | date         |  optional | string                  | jika kosong akan default ke tanggal hari ini. contoh value: 2024-09-10                   |
 > | category     |  optional | string                  | jika diisi akan memfilter data berdasarkan kategori, value dapat dilihat pada tabel mapping di bawah |
 > | sub-category |  optional | string                  | jika diisi harus sesuai dengan category dan akan memfilter data berdasarkan sub-category, value dapat dilihat pada tabel mapping di bawah |
 

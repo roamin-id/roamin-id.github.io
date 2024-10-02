@@ -83,25 +83,36 @@ SUCCESS RESPONSE:
 ```
 [
   {
-    "categoryKey": 0,
-    "categoryName": "string",
+    "categoryKey": 5,
+    "categoryName": "Akta",
     "data": [
       {
-        "subCategoryKey": 0,
-        "subCategoryName": "string",
+        "subCategoryKey": 20,
+        "subCategoryName": "Tridatu Akta Kelahiran",
         "statistic": {
-          "submitted": 0,
-          "inReview": 0,
-          "reviewed": 0,
-          "completed": 0,
+          "submitted": 11,
+          "inReview": 1,
+          "reviewed": 1,
+          "completed": 8,
           "returnedFromFO": 0,
           "returnedFromValidator": 0,
-          "unprocessed": 0
+          "unprocessed": 1
         }
       }
     ]
   }
 ]
+```
+
+ERROR RESPONSE
+```
+{
+  "error": {
+    "statusCode": 401,
+    "name": "UnauthorizedError",
+    "message": "API KEY tidak terdaftar"
+  }
+}
 ```
 ##### Statistic data
 > | field                   |status           | Description                                                    |

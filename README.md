@@ -16,10 +16,14 @@
 
 > | name         |  type     | data type               | description                                                           |
 > |--------------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | APIKEY       |  mandatory | string                 | API Key dari web admin                                      |
-> | date         |  optional | string                  | default adalah tanggal hari ini                                       |
+> | date         |  optional | string                  | default adalah tanggal hari ini, contoh: 2024-09-10                   |
 > | category     |  optional | string                  | jika diisi akan memfilter data berdasarkan kategori, value dapat dilihat pada tabel mapping di bawah |
 > | sub-category |  optional | string                  | jika diisi harus sesuai dengan category dan akan memfilter data berdasarkan sub-category, value dapat dilihat pada tabel mapping di bawah |
+
+##### Header
+> | name        | value                  |
+> |-------------|------------------------|
+> | x-api-key   | API Key dari web admin |
 
 ##### Pilihan category dan sub-category
 
@@ -72,7 +76,7 @@
 ##### Example cURL
 
 > ```javascript
->  curl http://antri.roamin.id/services/statistics/external?APIKEY=8358fbe4-9b4d-4042-a7d6-8d1478505302&category=akta
+>  curl -X 'GET' 'http://localhost:3001/services/statistics/external?category=akta' -H 'accept: application/json' -H 'x-api-key: 352a8ef6-fbba-4c79-8f01-fe50da076055'
 > ```
 
 
@@ -133,7 +137,7 @@ ERROR RESPONSE
 2. Setelah tersambung, emit `subscribe-to-channel` dengan data `['NewRequest', 'UpdateRequest']`
 3. Listen event `message` untuk mendapatkan update
 ```
-socket = io(http://antri.roamin.id, {
+socket = io(ws://localhost:3002, {
     transports: ['websocket'], 
     autoConnect: false,
 });

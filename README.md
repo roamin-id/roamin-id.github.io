@@ -16,6 +16,7 @@
 
 > | name         |  type     | data type               | description                                                           |
 > |--------------|-----------|-------------------------|-----------------------------------------------------------------------|
+> | APIKEY         |  mandatory | string                  | API Key dari web admin                                      |
 > | date         |  optional | string                  | default adalah tanggal hari ini                                       |
 > | category     |  optional | string                  | jika diisi akan memfilter data berdasarkan kategori, value dapat dilihat pada tabel mapping di bawah |
 > | sub-category |  optional | string                  | jika diisi harus sesuai dengan category dan akan memfilter data berdasarkan sub-category, value dapat dilihat pada tabel mapping di bawah |

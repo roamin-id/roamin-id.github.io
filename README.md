@@ -60,7 +60,7 @@
 
 ##### Responses
 
-> | http code     | content-type                      | response                                                            |
+> | http code     | content-type                      | message                                                            |
 > |---------------|-----------------------------------|---------------------------------------------------------------------|
 > | `200`         | `application/json`                | Lihat contoh response sukses di bawah                               |
 > | `401`         | `text/html;charset=utf-8`         | `Mohon isi API Key`                                                 |

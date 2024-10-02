@@ -113,3 +113,30 @@ SUCCESS RESPONSE:
 > | `returnedFromFO`        | Jumlah permohonan yang dikembalikan ke warga/opr desa hari ini  |
 > | `returnedFromValidator` | Jumlah permohonan yang dikembalikan ke FO hari ini              |
 > | `unprocessed`           | Jumlah permohonan belum diproses FO hari ini                    |
+
+------------------------------------------------------------------------------------------
+
+#### Websocket untuk komunikasi real-time
+
+1. Gunakan socket `websocket`
+2. Setelah tersambung, emit `subscribe-to-channel` dengan data `['NewRequest', 'UpdateRequest']`
+3. Listen event `message` untuk mendapatkan update
+```
+socket = io(http://antri.roamin.id, {
+    transports: ['websocket'], 
+    autoConnect: false,
+    query: {
+      "api-key": "xxxx"
+    }
+});
+
+socket.on('connect', () => {
+  socket.emit('subscribe-to-channel', [
+      'NewRequest',
+      'UpdateRequest',
+    ]);
+});
+
+socket.on('message', (msg) => {
+    //fetch ulang data statistik
+});```

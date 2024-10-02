@@ -16,7 +16,7 @@
 
 > | name         |  type     | data type               | description                                                           |
 > |--------------|-----------|-------------------------|-----------------------------------------------------------------------|
-> | APIKEY         |  mandatory | string                  | API Key dari web admin                                      |
+> | APIKEY       |  mandatory | string                 | API Key dari web admin                                      |
 > | date         |  optional | string                  | default adalah tanggal hari ini                                       |
 > | category     |  optional | string                  | jika diisi akan memfilter data berdasarkan kategori, value dapat dilihat pada tabel mapping di bawah |
 > | sub-category |  optional | string                  | jika diisi harus sesuai dengan category dan akan memfilter data berdasarkan sub-category, value dapat dilihat pada tabel mapping di bawah |
@@ -61,13 +61,13 @@
 
 ##### Responses
 
-> | http code     | content-type                      | message                                                            |
-> |---------------|-----------------------------------|---------------------------------------------------------------------|
-> | `200`         | `application/json`                | Lihat contoh response sukses di bawah                               |
-> | `401`         | `text/html;charset=utf-8`         | `Mohon isi API Key`                                                 |
-> | `401`         | `text/html;charset=utf-8`         | `API KEY tidak terdaftar`                                           |
-> | `404`         | `text/html;charset=utf-8`         | `Kategori wajib ada jika mengisi sub kategori`                      |
-> | `404`         | `text/html;charset=utf-8`         | `Sub Kategori tidak terdaftar`                               |
+> | http code     | content-type                      | message                                          |
+> |---------------|-----------------------------------|--------------------------------------------------|
+> | `200`         | `application/json`                | Lihat contoh response sukses di bawah            |
+> | `401`         | `text/html;charset=utf-8`         | `Mohon isi API Key`                              |
+> | `401`         | `text/html;charset=utf-8`         | `API KEY tidak terdaftar`                        |
+> | `404`         | `text/html;charset=utf-8`         | `Kategori wajib ada jika mengisi sub kategori`   |
+> | `404`         | `text/html;charset=utf-8`         | `Sub Kategori tidak terdaftar`                   |
 
 ##### Example cURL
 
@@ -104,12 +104,12 @@ SUCCESS RESPONSE:
 ]
 ```
 ##### Statistic data
-> | field     | Description                                                            |
-> |---------------|---------------------------------------------------------------------|
-> | `submitted`         | Jumlah permohonan yang diajukan sampai saat ini                               |
-> | `inReview`         |  Jumlah permohonan yang sedang diproses oleh FO                                                 |
-> | `reviewed`         | Jumlah permohonan yang sudah disetujui validator                      |
-> | `completed`         | Jumlah permohonan yang sudah dicetak                      |
-> | `returnedFromFO`         | Jumlah permohonan yang dikembalikan ke warga/opr desa                               |
-> | `returnedFromValidator`        | Jumlah permohonan yang dikembalikan ke FO                               |
-> | `unprocessed`        | Jumlah permohonan belum diproses FO                               |
+> | field                   | Description                                                     |
+> |-------------------------|-----------------------------------------------------------------|
+> | `submitted`             | Jumlah permohonan yang diajukan hari ini                        |
+> | `inReview`              |  Jumlah permohonan yang sedang diproses oleh FO hari ini        |
+> | `reviewed`              | Jumlah permohonan yang sudah disetujui validator hari ini       |
+> | `completed`             | Jumlah permohonan yang sudah dicetak hari ini                   |
+> | `returnedFromFO`        | Jumlah permohonan yang dikembalikan ke warga/opr desa hari ini  |
+> | `returnedFromValidator` | Jumlah permohonan yang dikembalikan ke FO hari ini              |
+> | `unprocessed`           | Jumlah permohonan belum diproses FO hari ini                    |

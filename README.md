@@ -125,9 +125,6 @@ SUCCESS RESPONSE:
 socket = io(http://antri.roamin.id, {
     transports: ['websocket'], 
     autoConnect: false,
-    query: {
-      "api-key": "xxxx"
-    }
 });
 
 socket.on('connect', () => {

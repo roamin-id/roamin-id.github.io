@@ -104,15 +104,15 @@ SUCCESS RESPONSE:
 ]
 ```
 ##### Statistic data
-> | field                   | Description                                                     |
-> |-------------------------|-----------------------------------------------------------------|
-> | `submitted`             | Jumlah permohonan yang diajukan hari ini                        |
-> | `inReview`              |  Jumlah permohonan yang sedang diproses oleh FO hari ini        |
-> | `reviewed`              | Jumlah permohonan yang sudah disetujui validator hari ini       |
-> | `completed`             | Jumlah permohonan yang sudah dicetak hari ini                   |
-> | `returnedFromFO`        | Jumlah permohonan yang dikembalikan ke warga/opr desa hari ini  |
-> | `returnedFromValidator` | Jumlah permohonan yang dikembalikan ke FO hari ini              |
-> | `unprocessed`           | Jumlah permohonan belum diproses FO hari ini                    |
+> | field                   |status           | Description                                                    |
+> |-------------------------|-----------------|----------------------------------------------------------------|
+> | `submitted`             | ANTRIAN MASUK   | Jumlah permohonan yang diajukan hari ini                       |
+> | `inReview`              | DIPROSES FO     | Jumlah permohonan yang sedang diproses oleh FO hari ini        |
+> | `reviewed`              | DIVALIDASI      | Jumlah permohonan yang sudah disetujui validator hari ini      |
+> | `completed`             | DICETAK         | Jumlah permohonan yang sudah dicetak hari ini                  |
+> | `returnedFromFO`        | BATAL FO        | Jumlah permohonan yang dikembalikan ke warga/opr desa hari ini |
+> | `returnedFromValidator` | BATAL VALIDATOR | Jumlah permohonan yang dikembalikan ke FO hari ini             |
+> | `unprocessed`           | BELUM DIPROSES  | Jumlah permohonan belum diproses FO hari ini                   |
 
 ------------------------------------------------------------------------------------------
 

@@ -66,13 +66,13 @@
 
 ##### Responses
 
-> | http code     | content-type                      | message                                          |
-> |---------------|-----------------------------------|--------------------------------------------------|
-> | `200`         | `application/json`                | Lihat contoh response sukses di bawah            |
-> | `401`         | `text/html;charset=utf-8`         | `Mohon isi API Key`                              |
-> | `401`         | `text/html;charset=utf-8`         | `API KEY tidak terdaftar`                        |
-> | `404`         | `text/html;charset=utf-8`         | `Kategori wajib ada jika mengisi sub kategori`   |
-> | `404`         | `text/html;charset=utf-8`         | `Sub Kategori tidak terdaftar`                   |
+> | status code   | name                | message                                          |
+> |---------------|---------------------|--------------------------------------------------|
+> | `200`         |                     | Lihat contoh response sukses di bawah            |
+> | `401`         | `UnauthorizedError` | `Mohon isi API Key`                              |
+> | `401`         | `UnauthorizedError` | `API KEY tidak terdaftar`                        |
+> | `404`         | `NotFoundError`     | `Kategori wajib ada jika mengisi sub kategori`   |
+> | `404`         | `NotFoundError`     | `Sub Kategori tidak terdaftar`                   |
 
 ##### Example cURL
 

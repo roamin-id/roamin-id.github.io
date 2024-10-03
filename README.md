@@ -2,7 +2,7 @@
 
 ### Flow:
 1. Register user baru dengan role external
-2. Generate API key lewat web admin
+2. Generate API key lewat web admin > profile > Generate API Key
 3. Pasang API key pada header untuk mengakses endpoint dibawah
 4. Gunakan websocket untuk mendapatkan update secara realtime atau panggil API secara periodik
 

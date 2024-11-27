@@ -3954,18 +3954,14 @@ void main() {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-left: 1px;
+     
     "
   >
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="${e}" fill="white" />
-    </svg>
+     <img
+      src="${e}"
+      alt="marker-icon"
+      style="width: 20px; height: 20px;"
+    />
   </div>
 
   <div
